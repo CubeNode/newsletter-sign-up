@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <div id="container">
+    <div class="left-side">
+      <div class="left-item">
+        <h1 class="bold-text">Stay updated!</h1>
+      </div>
+      <div class="left-item">
+        <p class="reg-text">Join 60,000+ product managers receiving monthly updates on:</p>
+      </div>
+
+      <div class="left-item">
+        <div class="list-item">
+          <img src="assets/images/icon-list.svg" alt="Icon-List">
+          <p class="reg-text">Product discovery and building what matters</p>
+        </div>
+        <div class="list-item">
+          <img src="assets/images/icon-list.svg" alt="Icon-List">
+          <p class="reg-text">Measuring to ensure updates are a success</p>
+        </div>
+        <div class="list-item">
+          <img src="assets/images/icon-list.svg" alt="Icon-List">
+          <p class="reg-text">And much more!</p>
+        </div>
+      </div>
+      
+
+      <form class="form left-item" method="POST" for="email" onsubmit="">
+        <div>
+          <label id="email-label" class="bold-text">Email address</label>
+          <span id="error-message">Valid email required</span>
+        </div>
+        <input type="email" id="email" name="email" placeholder="email@company.com" oninvalid="onInvalid()">
+        <input type="submit" value="Subscribe to monthly newsletter" class="reg-text button">
+      </form>
+
+    </div>
+    <div class="right-side">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="sign up desktop" class="image-full">
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="sign up mobile" class="image-mobile">
+    </div>
+  </div>
+  
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <div id="success">
+    <div id="success-message">
+      <img src="assets/images/icon-success.svg" alt="success icon">
+      <h1 class="bold-text">Thanks for subscribing!</h1>
+      <p class="reg-text">
+        A confirmation email has been sent to <span id="confirmation-email" class="bold-text">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="reg-text dismiss" onclick="dismiss()">Dismiss message</button>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Clint Jones</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
