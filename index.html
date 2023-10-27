@@ -22,27 +22,29 @@
 
       <div class="left-item">
         <div class="list-item">
-          <img src="assets/images/icon-list.svg" alt="Icon-List">
+          <img src="assets/images/icon-list.svg" alt="Icon-List" class="check-icon">
           <p class="reg-text">Product discovery and building what matters</p>
         </div>
         <div class="list-item">
-          <img src="assets/images/icon-list.svg" alt="Icon-List">
+          <img src="assets/images/icon-list.svg" alt="Icon-List" class="check-icon">
           <p class="reg-text">Measuring to ensure updates are a success</p>
         </div>
         <div class="list-item">
-          <img src="assets/images/icon-list.svg" alt="Icon-List">
+          <img src="assets/images/icon-list.svg" alt="Icon-List" class="check-icon">
           <p class="reg-text">And much more!</p>
         </div>
       </div>
       
 
       <form class="form left-item" method="POST" for="email" onsubmit="">
-        <div>
+        <div class="label-div">
           <label id="email-label" class="bold-text">Email address</label>
           <span id="error-message">Valid email required</span>
         </div>
-        <input type="email" id="email" name="email" placeholder="email@company.com" oninvalid="onInvalid()">
-        <input type="submit" value="Subscribe to monthly newsletter" class="reg-text button">
+        <div class="input-div">
+          <input type="email" id="email" name="email" placeholder="email@company.com" oninvalid="onInvalid()">
+          <input type="submit" value="Subscribe to monthly newsletter" class="reg-text button">
+        </div>
       </form>
 
     </div>
