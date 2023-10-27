@@ -154,6 +154,9 @@ input:focus {
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        background-color: #FFF;
+    }
     #container {
         flex-direction: column-reverse;
         border-radius: 0;
