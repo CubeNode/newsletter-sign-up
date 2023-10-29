@@ -13,41 +13,56 @@
 
   <div id="container">
     <div class="left-side">
-      <div class="left-item">
-        <h1 class="bold-text">Stay updated!</h1>
-      </div>
-      <div class="left-item">
-        <p class="reg-text">Join 60,000+ product managers receiving monthly updates on:</p>
-      </div>
+      <div class="left-container">
+        <div class="left-item">
+          <h1 class="bold-text">Stay updated!</h1>
+        </div>
+        <div class="left-item">
+          <p class="reg-text">Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
 
-      <div class="left-item">
-        <div class="list-item">
-          <img src="assets/images/icon-list.svg" alt="Icon-List" class="check-icon">
-          <p class="reg-text">Product discovery and building what matters</p>
-        </div>
-        <div class="list-item">
-          <img src="assets/images/icon-list.svg" alt="Icon-List" class="check-icon">
-          <p class="reg-text">Measuring to ensure updates are a success</p>
-        </div>
-        <div class="list-item">
-          <img src="assets/images/icon-list.svg" alt="Icon-List" class="check-icon">
-          <p class="reg-text">And much more!</p>
-        </div>
+        <ul class="list left-item">
+          <li class="check">
+            <p class="reg-text">Product discovery and building what matters</p>
+          </li>
+          <li class="check">
+            <p class="reg-text">Measuring to ensure updates are a success</p>
+          </li>
+          <li class="check">
+            <p class="reg-text">And much more!</p>
+          </li>
+        </ul>
+
+        <!--<div class="left-item">
+          <div class="list-item">
+            <img src="assets/images/icon-list.svg" alt="Icon-List" class="check-icon">
+            <p class="reg-text">Product discovery and building what matters</p>
+          </div>
+          <div class="list-item">
+            <img src="assets/images/icon-list.svg" alt="Icon-List" class="check-icon">
+            <p class="reg-text">Measuring to ensure updates are a success</p>
+          </div>
+          <div class="list-item">
+            <img src="assets/images/icon-list.svg" alt="Icon-List" class="check-icon">
+            <p class="reg-text">And much more!</p>
+          </div>
+        </div>-->
+        
+
+        <form class="form left-item" method="POST" for="email" onsubmit="">
+          <div class="label-div">
+            <label id="email-label" class="bold-text">Email address</label>
+            <span id="error-message">Valid email required</span>
+          </div>
+          <div class="input-div">
+            <input type="email" id="email" name="email" placeholder="email@company.com" oninvalid="onInvalid()">
+            <input type="submit" value="Subscribe to monthly newsletter" class="reg-text button">
+          </div>
+        </form>
+
       </div>
-      
-
-      <form class="form left-item" method="POST" for="email" onsubmit="">
-        <div class="label-div">
-          <label id="email-label" class="bold-text">Email address</label>
-          <span id="error-message">Valid email required</span>
-        </div>
-        <div class="input-div">
-          <input type="email" id="email" name="email" placeholder="email@company.com" oninvalid="onInvalid()">
-          <input type="submit" value="Subscribe to monthly newsletter" class="reg-text button">
-        </div>
-      </form>
-
     </div>
+    
     <div class="right-side">
       <img src="assets/images/illustration-sign-up-desktop.svg" alt="sign up desktop" class="image-full">
       <img src="assets/images/illustration-sign-up-mobile.svg" alt="sign up mobile" class="image-mobile">

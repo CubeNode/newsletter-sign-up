@@ -177,7 +177,6 @@ input:focus {
         border-radius: 0;
         padding: 0;
         width: 100vw;
-        height: 100vh;
         border: none;
         margin: 0;
         padding: 0;
@@ -189,10 +188,17 @@ input:focus {
         padding: 0;
     }
 
-   
+    .left-container {
+        padding: 0 25px;
+    }
+
     .left-item {
         width: 100%;
         margin: auto;
+    }
+
+    .list {
+        margin-bottom: 30px;
     }
 
     /*.check-icon {
@@ -210,12 +216,12 @@ input:focus {
     }
 
     .label-div {
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
 
     .input-div {
-        width: 90%;
+        width: 100%;
         margin: 5px auto;
     }
 
@@ -229,7 +235,7 @@ input:focus {
     #success {
         border-radius: 0;
         width: 100vw;
-        height: 100vh;
+        
         padding: 0;
     }
 
