@@ -39,7 +39,7 @@ html, body {
     
 }
 
-.left-item {
+/*.left-item {
     margin: 25px 0;
 }
 
@@ -49,6 +49,19 @@ html, body {
 
 .list-item p {
     margin: 8px;
+}*/
+
+.list {
+    padding: 0;
+    margin: 30px 0 30px 0;
+    list-style-type: none;
+}
+
+.check {
+    background: url('assets/images/icon-list.svg') no-repeat left top;
+    height: 28px;
+   
+    padding-left: 35px;
 }
 
 .form {
@@ -153,7 +166,7 @@ input:focus {
     bottom: 0vh;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     html, body {
         background-color: #FFF;
     }
@@ -170,21 +183,19 @@ input:focus {
     }
 
     .left-side, .right-side {
-        margin: 0;
+        width: 100%;
+        margin: auto;
         padding: 0;
     }
 
-    .left-side {
-        margin: auto;
-    }
-
+   
     .left-item {
         width: 80vw;
         margin: auto;
     }
 
     .check-icon {
-        margin: 0 10px 20px 0;
+        margin: auto;
     }
 
     .image-full {
@@ -195,11 +206,6 @@ input:focus {
         display: block;
         width: 100%;
         height: auto;
-    }
-
-    .right-side {
-        margin: 0;
-        padding: 0;
     }
 
     .label-div {
